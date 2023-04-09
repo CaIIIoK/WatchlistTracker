@@ -1,0 +1,24 @@
+import React, { Component } from 'react';
+import './App.css';
+import AppNavbar from './AppNavbar';
+import { Link } from 'react-router-dom';
+import { Button, Container } from 'reactstrap';
+
+class Home extends Component {
+    render() {
+        return (
+            <div>
+                <AppNavbar/>
+                <Container fluid>
+                    <Button color="link"><Link to="/clients">Clients</Link></Button>
+                    <Button color="link"><Link to="/tvshows">TV Shows</Link></Button>
+                    <Button color="link"><Link to="/movies">Films</Link></Button>
+                    <Button color="link"><Link to="/login">Log In</Link></Button>
+                    <Button color="link"><Link to="/register">Sign Up</Link></Button>
+                </Container>
+            </div>
+        );
+    }
+}
+
+export default Home;
